@@ -13,19 +13,19 @@ router.get("/test", auth, (req, res)=>{
     });
 })
 
-router.get("/student" , auth, isAdmin, isStudent, (req, res)=>{
-    res.json({
-        success:true,
-        message:"hey logged in as a student"
-    })
-});
+// router.get("/student" , auth, isAdmin, isStudent, (req, res)=>{
+//     res.json({
+//         success:true,
+//         message:"hey logged in as a student"
+//     })
+// });
 
-router.get("/admin", auth, isAdmin, isStudent, (req, res)=>{
-    res.json({
-        success:true,
-        message:"hey logged in as a admin"
-    })
-});
+// router.get("/admin", auth, isAdmin, isStudent, (req, res)=>{
+//     res.json({
+//         success:true,
+//         message:"hey logged in as a admin"
+//     })
+// });
 
 
 module.exports=router;

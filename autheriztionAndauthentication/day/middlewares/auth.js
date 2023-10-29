@@ -2,7 +2,7 @@ const express= require("express");
 const jwt = require('jsonwebtoken');
 require("dotenv").config();
 
-express.auth=(req, res , next)=>{
+exports.auth=(req, res , next)=>{
     try{
 
         //extract jwt token 
